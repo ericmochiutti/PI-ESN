@@ -11,3 +11,4 @@ wheels/
 oscilador_tensorflow_backup.ipynb
 oscilador.ipynb
 lorenz-PI-ESN.ipynb
+PI-LSTM/
