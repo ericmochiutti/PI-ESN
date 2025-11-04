@@ -3,8 +3,6 @@ import numpy as np
 
 class ESN:
     """
-    Echo State Network (ESN) implemented purely with NumPy arrays.
-
     This implementation uses fixed recurrent reservoir weights and
     trains only the linear output layer via ridge regression.
 
