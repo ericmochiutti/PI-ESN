@@ -1,5 +1,3 @@
-# ![Project Icon](./assets/icon.png)
-
 # **Physics-Informed Echo State Networks (PI-ESN) for the Van der Pol Oscillator**
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)]()
@@ -134,12 +132,12 @@ $$
 
 Configurable parameters include:
 
--   Reservoir size\
--   Spectral radius\
--   Leaking rate\
--   Input/reservoir/bias scaling\
--   Regularization\
--   Washout length\
+-   Reservoir size
+-   Spectral radius
+-   Leaking rate
+-   Input/reservoir/bias scaling
+-   Regularization
+-   Washout length
 -   Random seed for reproducibility
 
 ------------------------------------------------------------------------
@@ -158,10 +156,10 @@ $$
 
 This repository includes a full Slidev presentation explaining:
 
--   Model architecture\
--   Training workflow\
--   Simulation details\
--   Comparative results (ESN vs PI-ESN)\
+-   Model architecture
+-   Training workflow
+-   Simulation details
+-   Comparative results (ESN vs PI-ESN)
 -   Interactive Plotly figures
 
 Location:
