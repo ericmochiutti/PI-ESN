@@ -57,9 +57,10 @@ This command:
 
 The Van der Pol system is defined as:
 
-$$ \dot{x} {=tex}\_1 = x_2 $$
-
-\[ `\dot{x}`{=tex}\_2 = `\mu `{=tex}(1 - x_1\^2),x_2 - x_1 + u(t) \]
+$$
+\dot{x} = y \\
+\dot{y} = \mu(1 - x^2)y - x + u(t)
+$$
 
 Simulation code is located in:
 
@@ -73,13 +74,15 @@ Simulation code is located in:
 
 The ESN state update equation is:
 
-\[ x(k+1) = (1-`\alpha`{=tex}),x(k) +
-`\alpha`{=tex},`\tanh`{=tex}(W,x(k) + W\_{in},u(k)) \]
+$$
+\mathbf{x}(k+1) = (1-\alpha)\mathbf{x}(k) + \alpha \tanh(\mathbf{W}\mathbf{x}(k) + \mathbf{W}_{\text{in}}\mathbf{u}(k))
+$$
 
 Training uses ridge regression:
 
-\[ W\_{out} = YX\^`\top `{=tex}`\left`{=tex}( XX\^`\top `{=tex}+
-`\lambda `{=tex}I `\right`{=tex})\^{-1} \]
+$$
+\mathbf{W}_{\text{out}} = \mathbf{Y}\mathbf{X}^{\top} (\mathbf{X}\mathbf{X}^{\top} + \lambda \mathbf{I})^{-1}
+$$
 
 Configurable parameters include:
 
@@ -104,10 +107,9 @@ The PI-ESN introduces a hybrid loss function that combines data fitting
 with physics consistency.\
 The physics-based term enforces the Van der Pol dynamics:
 
-\[ `\mathcal{L}`{=tex} = `\mathcal{L}`{=tex}*{data} +
-`\lambda`{=tex}*{phys}, `\left`{=tex}\| `\dot{\hat{x}}`{=tex} -
-f(`\hat{x}`{=tex}, u) `\right`{=tex}\|\^2 \]
-
+$$
+\mathcal{L} = \mathcal{L}_{\text{data}} + \lambda_{\text{phys}} \| \mathbf{\dot{\hat{z}}} - f(\mathbf{\hat{z}}, u) \|^2
+$$
 
 ## 6. Slidev Presentation
 
