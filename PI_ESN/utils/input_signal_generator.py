@@ -21,7 +21,8 @@ def generate_signal(config, seed=7):
         ...          "points": 300,
         ...          "a_range": [0.0, 1.0],
         ...          "b_range": [5, 20]}
-        ...     ]
+        ...     ],
+        ...     "seed": 7,
         ... }
 
     seed : int, optional
