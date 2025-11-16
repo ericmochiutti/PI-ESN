@@ -121,7 +121,7 @@ Simulation code is located in:
 The ESN state update equation is:
 
 $$
-\mathbf{x}(k+1) = (1-\alpha)\mathbf{x}(k) + \alpha \tanh(\mathbf{W}\mathbf{x}(k) + \mathbf{W}_{\text{in}}\mathbf{u}(k))
+\mathbf{x}(k+1) = (1-\alpha)\mathbf{x}(k) + \alpha \tanh(\mathbf{W}\mathbf{x}(k) + \mathbf{W}_{\text{in}}\mathbf{u}(k) + \mathbf{W}_{\text{fb}}\mathbf{y}(k))
 $$
 
 Training uses ridge regression:
