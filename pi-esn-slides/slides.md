@@ -797,13 +797,54 @@ transition: fade-out
         return MSE
 ```
 
+
+---
+transition: fade-out
+title: Reservour States in Training
+---
+
+<iframe 
+  src="/html/esn_states_X_train_2.html"
+  style="width: 100%; height: 100%; border: none;"
+></iframe>
+
+---
+transition: fade-out
+title: Reservour States for prediction
+---
+
+<iframe 
+  src="/html/esn_piesn_comparison_linked_X_test.html"
+  style="width: 150%; height: 150%; border: none;"
+></iframe>
+
+---
+transition: fade-out
+title: Fixed Weights
+---
+
+<iframe 
+  src="/html/esn_weights.html"
+  style="width: 140%; height: 120%; border: none;"
+></iframe>
+
+---
+transition: fade-out
+title: Trained Weights
+---
+
+<iframe 
+  src="/html/Wout_heatmaps_scatter.html"
+  style="width: 200%; height: 95%; border: none;"
+></iframe>
+
+
 ---
 transition: fade-out
 title: ESN vs PI-ESN results
 ---
 
 <iframe 
-  src="/html/system_vs_esn_piesn.html"
-  style="width: 105%; height: 550px; border: none;"
+  src="/html/system_vs_esn_piesn_2.html"
+  style="width: 100%; height: 100%; border: none;"
 ></iframe>
-
