@@ -10,8 +10,7 @@ def save_experiment_config(
     piesn_params=None,
 ):
     """
-    Gera um arquivo .txt (ou .cfg) contendo todos os parâmetros do experimento.
-    Se algum conjunto de parâmetros não for passado, a função ignora.
+    Generates a .txt (or .cfg) file containing all experiment parameters.
     """
 
     def format_block(title, data_dict):
