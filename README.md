@@ -43,12 +43,9 @@ $$
 $$
 
 Converted to State-Space form (used in this project):
-$$
-\begin{aligned}
-\dot{x}_1 &= x_2 \\
-\dot{x}_2 &= \mu(1 - x_1^2)x_2 - x_1 + u(t)
-\end{aligned}
-$$
+$$ \dot{x}_1 = x_2 $$
+$$\dot{x}_2 &= \mu(1 - x_1^2)x_2 - x_1 + u(t)$$
+
 * Where $\mu > 0$ controls the non-linearity and damping strength.
 * The system exhibits a stable **limit cycle**.
 
