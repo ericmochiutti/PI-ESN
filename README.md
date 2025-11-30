@@ -129,6 +129,7 @@ Figure 1: Comparison of free-running prediction. Notice how the PI-ESN (green) m
 │   ├── slides.md
 │   ├── snippets
 │   └── vercel.json
+├── assets
 ├── pyproject.toml
 └── uv.lock
 ```
