@@ -59,6 +59,7 @@ $$
 The ESN is a Recurrent Neural Network (RNN) where the hidden layer (reservoir) is fixed and random. Only the readout weights are trained.
 
 **State Update Equation:**
+
 $$
 \mathbf{x}(k+1) = (1-\alpha)\mathbf{x}(k) + \alpha \tanh(\mathbf{W}\mathbf{x}(k) + \mathbf{W}_{\text{in}}\mathbf{u}(k) + \mathbf{W}_{\text{fb}}\mathbf{y}(k))
 $$
